@@ -24,4 +24,8 @@ public class Seguimiento {
     @JoinColumn(name = "contacto_id")
     @JsonBackReference(value = "contacto-seguimientos")
     private Contacto contacto;
+
+    public boolean isCompletado() {
+        return completado;
+    }
 }
